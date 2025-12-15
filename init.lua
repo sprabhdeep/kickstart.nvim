@@ -921,8 +921,8 @@ require('lazy').setup({
         specs = {},
         groups = {},
       }
-
-      vim.cmd.colorscheme 'duskfox'
+      --color schemes included in nighfox theme are 'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'nordfox', 'terafox', 'carbonfox'
+      vim.cmd.colorscheme 'carbonfox'
     end,
     --
     --'ellisonleao/gruvbox.nvim',
