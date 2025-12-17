@@ -868,9 +868,9 @@ require('lazy').setup({
     --    },
     --  }
 
-    --  -- Load the colorscheme here.
-    --  -- Like many other themes, this one has different styles, and you could load
-    --  -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+    -- Load the colorscheme here.
+    -- Like many other themes, this one has different styles, and you could load
+    -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
     --  vim.cmd.colorscheme 'tokyonight-moon'
     --end,
     --
@@ -922,13 +922,13 @@ require('lazy').setup({
         groups = {},
       }
       --color schemes included in nighfox theme are 'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'nordfox', 'terafox', 'carbonfox'
-      vim.cmd.colorscheme 'carbonfox'
+      vim.cmd.colorscheme 'terafox'
     end,
     --
     --'ellisonleao/gruvbox.nvim',
     --priority = 1000,
     --config = function()
-    -- require('gruvbox').setup {
+    --  require('gruvbox').setup {
     --    -- Optional: customize the theme settings
     --    palette_overrides = {},
     --    overrides = {},
