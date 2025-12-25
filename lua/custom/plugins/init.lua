@@ -75,4 +75,26 @@ return {
       options = {}, -- if you add plugin options, they go here.
     },
   },
+  {
+    'NvChad/nvim-colorizer.lua',
+    opts = {
+      user_default_options = {
+        mode = 'virtualtext', -- This mode adds a color square as virtual text
+        names = false, -- Set to false to disable color names (if they appear)
+        RGB = true, -- Enable highlighting for #RGB format
+        RRGGBB = true, -- Enable highlighting for #RRGGBB format
+        -- Disable other modes that might add text
+        css = false,
+        css_fn = false,
+        rgb_fn = false,
+        hsl_fn = false,
+        -- Add other options as needed
+      },
+      -- Attach to all filetypes by default
+      filetypes = { '*' },
+    },
+    config = function(_, opts)
+      require('colorizer').setup(opts)
+    end,
+  },
 }
